@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Web3 from 'web3'
 
+import config from './config.json'
+
 import TokenVestingApp from './views/TokenVestingApp'
 
 const App = () => (
@@ -19,7 +21,7 @@ const Main = function({ match }) {
 
   // TODO validate TokenVesting address
   return web3.utils.isAddress(address)
-    ? <TokenVestingApp address={ address } token={"0x8eb24319393716668d768dcec29356ae9cffe285"} />
+    ? <TokenVestingApp address={ address } token={config.networks.mainnet.tokenAddress} />
     : <MissingAddress />
 }
 

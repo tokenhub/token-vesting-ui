@@ -1,0 +1,10 @@
+{
+  "networks": {
+    "mainnet" : {
+      "tokenAddress": "0x8eb24319393716668d768dcec29356ae9cffe285"
+    },
+    "rinkeby" : {
+      "tokenAddress": "0xACF8C2aF28A679AC035B64fC9096E11e64677FAd"
+    }
+  }
+}
